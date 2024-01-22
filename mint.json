@@ -1,17 +1,18 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
+  "openapi": ["/api-endpoint/openapi.yml"],
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#7436CE",
     "light": "#07C983",
     "dark": "#0D9373",
     "anchors": {
-      "from": "#0D9373",
+      "from": "#8D4185",
       "to": "#07C983"
     }
   },
@@ -50,24 +51,45 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "GETTING-STARTED/welcome",
+        "GETTING-STARTED/pricing",
+        "GETTING-STARTED/token"
+        
       ]
     },
+    
     {
-      "group": "Essentials",
+      "group": "IMAGE GEN SOLUTION",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "IMAGE-GEN-SOLUTION/getting-started-with-our-image-gen-solution",
+        "IMAGE-GEN-SOLUTION/image-gen-api-docs",
+        "IMAGE-GEN-SOLUTION/lcm-loras-for-blazing-fast-generations",
+        "IMAGE-GEN-SOLUTION/what-is-a-stable-diffusion--asset",
+        "IMAGE-GEN-SOLUTION/uploading-a-custom-asset-to-the-octoai-asset-library",
+        {
+          "group": "Fine-tuning Stable Diffusion",
+          "pages": ["IMAGE-GEN-SOLUTION/fine-tuning-stable-diffusion", "IMAGE-GEN-SOLUTION/typescript-sdk-fine-tuning"]
+      },
+        
+        "IMAGE-GEN-SOLUTION/upscaling"
       ]
     },
+
+
+    {
+      "group": "TEXT GEN SOLUTION",
+      "pages": [
+        "TEXT-GEN-SOLUTION/getting-started-with-our-text-gen-solution",
+        "TEXT-GEN-SOLUTION/text-gen-rest-api",
+        "TEXT-GEN-SOLUTION/text-gen-typescript-sdk",
+        "TEXT-GEN-SOLUTION/text-gen-python-sdk"
+      ]
+    },
+
+
+    
     {
       "group": "API Documentation",
       "pages": [
@@ -77,9 +99,18 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/create-new-endpoint",
+        "api-reference/endpoint/delete-v1endpoint",
+        "api-reference/endpoint/get-v1endpoint-containermetadata",
+        "api-reference/endpoint/get-v1endpoint-volume_token",
+        "api-reference/endpoint/get-v1endpoint",
+        "api-reference/endpoint/get-v1endpoints",
+        "api-reference/endpoint/get-v1events-stream",
+        "api-reference/endpoint/get-v1events",
+        "api-reference/endpoint/get-v1events",
+        "api-reference/endpoint/get-v1logs",
+        "api-reference/endpoint/get"
+      
       ]
     }
   ],
